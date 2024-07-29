@@ -10,3 +10,4 @@ class PetVaccinationSerializer(serializers.ModelSerializer):
     class Meta:
         model = PetVaccination
         fields = '__all__'
+

@@ -10,5 +10,6 @@ router.register(r'pets', views.PetViewSet)
 urlpatterns = [
     path('saludo', views.index),
     path('', include(router.urls)),
-    path('owners/pets/<int:owner_id>/', views.owner_pets )
+    path('owners/pets/<int:owner_id>/', views.owner_pets ),
+    path('pets/vaccinations/<int:pet_id>/', views.pets_vaccinations )
 ]
